@@ -245,11 +245,11 @@ margin-left:20px
 }
 
 .container, .navbar-static-top .container, .navbar-fixed-top .container, .navbar-fixed-bottom .container {
-	width: 940px
+	width: 1195px
 }
 
 .span12 {
-	width: 940px
+	width: 1195px
 }
 
 .span11 {
@@ -3951,7 +3951,7 @@ filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', end
 }
 
 .navbar-static-top .container, .navbar-fixed-top .container, .navbar-fixed-bottom .container {
-	width: 940px
+	width: 1195px
 }
 
 .navbar-fixed-top {
