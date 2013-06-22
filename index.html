@@ -1,83 +1,201 @@
 
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!-->
-<html class="no-js">
-<!--<![endif]-->
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Clarion Media</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
 
-<head>
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-<title>Clarion Media</title>
+    <!-- Le styles -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <style type="text/css">
+      body {
+        padding-top: 20px;
+        padding-bottom: 60px;
+      }
 
-<meta name="keywords" content="Web Design, Responsive Design, Web, Internet, Solutions, CMS, Websites, Design, Mobile, Apps, Android, Droid, iPhone, Clarion, Media, Clarion Media, Development, Software, Consulting, Business Solutions, Software Solutions" />
-<meta name="description" content="Clarion Media provides software development and consulting solutions for businesses." />
-<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+      /* Custom container */
+      .container {
+        margin: 0 auto;
+      }
+      .container > hr {
+        margin: 60px 0;
+      }
 
-<meta name="viewport" content="user-scalable=no, initial-scale=1, minimum-scale=1, maximum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi">
+      /* Main marketing message and sign up button */
+      .jumbotron {
+        padding: 10px;
+        text-align: left;
+        background-image: url("img/macbook.png");
+        background-position: bottom;
+        background-repeat: no-repeat;
+        color: white;
+        margin-top: 100px;
+        margin-bottom: 20px;
+      }
+      .jumbotron h1 {
+        font-size: 60px;
+        line-height: 1;
+      }
+      .jumbotron .lead {
+        font-size: 24px;
+        line-height: 1.25;
+      }
+      .jumbotron .btn {
+        font-size: 21px;
+        padding: 14px 24px;
+      }
 
-<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,200,200italic,300,300italic,400italic,600,600italic,700,700italic,900,900italic">
-<link rel="stylesheet" href="css/main.css">
+      /* Supporting marketing content */
+      .marketing {
+        margin: 60px 0;
+      }
+      .marketing p + h4 {
+        margin-top: 28px;
+      }
 
-<script src="js/modernizr-2.6.2.min.js"></script>
 
-</head>
+      /* Customize the navbar links to be fill the entire space of the .navbar */
+      .navbar .navbar-inner {
+        padding: 0;
+      }
+      .navbar .nav {
+        margin: 0;
+        display: table;
+        width: 100%;
+      }
+      .navbar .nav li {
+        display: table-cell;
+        width: 1%;
+        float: none;
+      }
+      .navbar .nav li a {
+        font-weight: bold;
+        text-align: center;
+        border-left: 1px solid rgba(255,255,255,.75);
+        border-right: 1px solid rgba(0,0,0,.1);
+      }
+      .navbar .nav li:first-child a {
+        border-left: 0;
+        border-radius: 3px 0 0 3px;
+      }
+      .navbar .nav li:last-child a {
+        border-right: 0;
+        border-radius: 0 3px 3px 0;
+      }
 
-<body>
+    </style>
+    <link href="css/bootstrap-responsive.css" rel="stylesheet">
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <div class="container">
+
+<!-- Begin Header / Nav -->
 <header class="navbar navbar-fixed-top">
   <div class="navbar-inner">
     <div class="container"> 
       
+      <!-- Hamburger Nav button -->
       <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
-    	</a>
+      </a>
       
+      <!-- logo -->
       <a class="brand" href="#home"> 
-      		<span class="hidden-phone hidden-tablet"><img src="img/logo.png" alt="Clarion Media" title="Clarion Media"></span>
+          <span class="hidden-phone hidden-tablet"><img src="img/logo.png" alt="Clarion Media" title="Clarion Media"></span>
       </a> 
       
+      <!-- Navigation -->
       <div class="nav-collapse collapse" id="navigation">
         <ul class="nav">
         
           <li class="active"><a href="#home"><span class="icon-chevron-up" style="margin-top:4px"></span></a></li>
           <li><a href="#mobile">mobile</a></li>
           <li><a href="#services">web</a></li>
+          <li><a href="#news">cloud</a></li>
           <li><a href="#contact">contact</a></li>
         </ul>
-      </div>
-    </div>
-  </div>
+      </div><!-- nav-collapse -->
+    </div><!-- container -->
+  </div><!-- navbar inner -->
 </header>
+<!-- End Header / Nav --> 
 
-<section id="home" class="home np">
-  <div class="home-header localscroll">
-    <section>
-      <div class="row white-background">
-        <h2><span class="hidden-phone">We build<br />software that sings.</span>
-        <h3><strong>Web, mobile, enterprise</strong></h3>  
+      <!-- Jumbotron -->
+      <div class="jumbotron">
+        <h1>We build<br />software<br />that sings.</h1>
+        <p class="lead">Web, mobile, enterprise&mdash;let's build something <i>extraordinary</i>.</p>
+        <a class="btn btn-large btn-success" href="#">Get started today</a>
       </div>
-    </section>
-  </div>
 
-  <div class="container lead-section">
-    <div class="hero span6">
-      <h2>Like Music to Your Ears</h2>
-      <p>Finally, gain clarity in software. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ac gravida sem, et scelerisque neque. Integer aliquam, erat non ultrices convallis, odio leo vestibulum ipsum, vitae tincidunt felis ligula consequat nulla.</p>
+      <div class="row">
+        <div class="row">
+          <div class="span6">
+            <h2>Like Music to Your Ears</h2>
+            <p>Finally, gain clarity from software. Clarion Media provides development and consulting services for web, mobile, and enterprise software. We build extraordinary solutions while tackling challenging problems, specializing in the construction of mobile applications, rich websites, and scalable cloud solutions.</p>
+          </div>
+          
+          <div class="span6">
+          
+         
+            <h5>Experienced.</h5>
+            <p class="op8"> We’ve had the pleasure of working with some fantastic clients over the years, from well known brands to start-ups. Our clients range from media and insurance companies to restaurants and law firms. </p>
+         
+            <br>
+            
+              <span class="hidden-tablet">
+            <h5>Responsive Design.</h5>
+            <p class="op8" ><strong>Try it out now by resizing this browser window.</strong> With a fully responsive design from Side One Media, your website will automatically adapt to all devices: smart phones, tablets & desktops.  </p>
+             <br>
+          </span>
+
+               <h5>We Build for Business.</h5>
+            <p class="op8">Our firm focuses on creating beautiful interactive web & mobile websites and developing custom web solutions. Every solution is custom built with your input to make sure all of your needs are met. <strong>We listen to our clients.</strong></p>
+            <br>
+            
+           
+            
+          </div>
+          
+        </div>
+      
     </div>
-  </div>
 
-</section>
+      <hr>
 
-<footer id="footer"> 
+      <div class="footer">
+        <p>&copy; Clarion Media, LLC 2013</p>
+      </div>
 
-</footer>
+    </div> <!-- /container -->
 
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script> 
-<script>window.jQuery || document.write('<script src="js/jquery-2.0.2.min.js"><\/script>')</script> 
-<script src="js/index.js"></script>
-</body>
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/jquery-2.0.2.min"></script>
+    <script src="js/bootstrap-transition.js"></script>
+    <script src="js/bootstrap-alert.js"></script>
+    <script src="js/bootstrap-modal.js"></script>
+    <script src="js/bootstrap-dropdown.js"></script>
+    <script src="js/bootstrap-scrollspy.js"></script>
+    <script src="js/bootstrap-tab.js"></script>
+    <script src="js/bootstrap-tooltip.js"></script>
+    <script src="js/bootstrap-popover.js"></script>
+    <script src="js/bootstrap-button.js"></script>
+    <script src="js/bootstrap-collapse.js"></script>
+    <script src="js/bootstrap-carousel.js"></script>
+    <script src="js/bootstrap-typeahead.js"></script>
+
+  </body>
 </html>
