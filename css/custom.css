@@ -1,0 +1,34 @@
+body {
+	font-family: 'Lato', sans-serif;
+}
+
+.light {
+	font-weight: 300;
+}
+
+.bold{
+	font-weight: 700;
+}
+.container ul.nav {
+	float: right;
+	top: 45px;
+}
+
+.container ul.nav > li{
+	font-size: 1.3em;
+}
+
+.home-header {
+	height: 450px;
+	clear: both;
+	display: block;
+	background: url('../img/office.jpg');
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	margin-bottom: 30px;
+}
+
+.hero {
+	text-align: center;
+}
