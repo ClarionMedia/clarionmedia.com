@@ -4,6 +4,10 @@
         font-family: 'Lato', sans-serif;
       }
 
+      #logo {
+        margin-right: 10em;
+      }
+
       /* Custom container */
       .container {
         margin: 0 auto;
