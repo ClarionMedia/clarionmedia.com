@@ -1,99 +1,101 @@
-      body {
-        padding-top: 20px;
-        padding-bottom: 60px;
-        font-family: 'Lato', sans-serif;
-      }
+body {
+	padding-bottom: 60px;
+	font-family: 'Lato', sans-serif;
+}	
 
-      #logo {
-        margin-right: 10em;
-      }
+#logo {
+margin-right: 10em;
+}
 
-      /* Custom container */
-      .container {
-        margin: 0 auto;
-      }
-      .container > hr {
-        margin: 60px 0;
-      }
+.container > hr {
+margin: 60px 0;
+}
 
-      /* Main marketing message and sign up button */
-      .jumbotron {
-        padding: 20px;
-        text-align: left;
-        background-image: url("../img/macbook.png");
-        background-size: cover;
-        background-repeat: no-repeat;
-        color: white;
-        margin-top: 100px;
-        margin-bottom: 20px;
-      }
-      .jumbotron h1 {
-        font-size: 60px;
-        line-height: 1;
-      }
-      .jumbotron .lead {
-        font-size: 24px;
-        line-height: 1.25;
-      }
-      .jumbotron .btn {
-        font-size: 21px;
-        padding: 14px 24px;
-      }
+header {
+	min-height: 70px;
+}
 
-      .jumbotron .span6 {
-        width: 470px;
-      }
+.jumbotron .span6 {
+	width: 470px;
+}
 
-      /* Supporting marketing content */
-      .marketing {
-        margin: 60px 0;
-      }
-      .marketing p + h4 {
-        margin-top: 28px;
-      }
+/* Supporting marketing content */
+.marketing {
+	margin: 60px 0;
+}
+.marketing p + h4 {
+	margin-top: 28px;
+}
+/* Main marketing message and sign up button */
+.jumbotron {
+	padding: 20px;
+	text-align: left;
+	background-image: url("../img/macbook.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+	color: white;
+	margin-top: 80px;
+	margin-bottom: 20px;
+}
+@media (max-width: 979px) {
+	.jumbotron {
+	margin-top: -20px;
+	}
+}
+.jumbotron h1 {
+	font-size: 60px;
+	line-height: 1;
+}
+.jumbotron .lead {
+	font-size: 24px;
+	line-height: 1.25;
+}
+.jumbotron .btn {
+	font-size: 21px;
+	padding: 14px 24px;
+}
 
+/* Customize the navbar links to be fill the entire space of the .navbar */
+.navbar .navbar-inner {
+	padding: 0;
+}
 
-      /* Customize the navbar links to be fill the entire space of the .navbar */
-      .navbar .navbar-inner {
-        padding: 0;
+.navbar .nav {
+	margin: 0;
+	width: 100%;
+	float: none;
+	top: 50px;
+}
+.navbar .nav li {
+	display: table-cell;
+	width: 1%;
+	float: none;
+}
+.navbar .nav li a {
+	font-weight: bold;
+	text-align: center;
+	border-left: 1px solid rgba(255,255,255,.75);
+	border-right: 1px solid rgba(0,0,0,.1);
+}
+.navbar .nav li:first-child a {
+	border-left: 0;
+	border-radius: 3px 0 0 3px;
+}
+.navbar .nav li:last-child a {
+	border-right: 0;
+	border-radius: 0 3px 3px 0;
+}
 
-      }
-      .navbar .nav {
-        margin: 0;
-        width: 100%;
-        float: none;
-        top: 50px;
-      }
-      .navbar .nav li {
-        display: table-cell;
-        width: 1%;
-        float: none;
-      }
-      .navbar .nav li a {
-        font-weight: bold;
-        text-align: center;
-        border-left: 1px solid rgba(255,255,255,.75);
-        border-right: 1px solid rgba(0,0,0,.1);
-      }
-      .navbar .nav li:first-child a {
-        border-left: 0;
-        border-radius: 3px 0 0 3px;
-      }
-      .navbar .nav li:last-child a {
-        border-right: 0;
-        border-radius: 0 3px 3px 0;
-      }
+.transparent-box {
+	background-color:rgba(0,0,0,0.25);
+	padding:10px;
+	margin-top:70px;
+}
 
-      .transparent-box {
-        background-color:rgba(0,0,0,0.25);
-        padding:10px;
-        margin-top:70px;
-      }
-
-      .service-list {
-        padding: 10px;
-        margin-top: 30px;
-      }
-      .service-list .span1, .service-list .span2, .service-list .span3{
-        margin-left: 0;
-      }
+.service-list {
+	padding: 10px;
+	margin-top: 30px;
+}
+.service-list .span1, .service-list .span2, .service-list .span3{
+	margin-left: 0;
+}
