@@ -115,3 +115,8 @@ header {
 .jumbotron#mobile-page {
 	background-image: url("../img/mobile-bg.jpg"); 
 }
+
+.body-copy {
+	font-size: 18px;
+	line-height: 26px;
+}
