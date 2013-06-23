@@ -103,3 +103,15 @@ header {
 .service-list .span1, .service-list .span2, .service-list .span3{
 	margin-left: 0;
 }
+
+#mobile-page {
+	position: relative;
+	min-height: 638px;
+	background-image: url("../img/mobile-bg.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.jumbotron#mobile-page {
+	background-image: url("../img/mobile-bg.jpg"); 
+}
