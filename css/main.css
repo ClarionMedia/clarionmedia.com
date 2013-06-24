@@ -92,7 +92,7 @@ header {
 	margin-top:70px;
 }
 
-#mobile {
+#main {
 	padding: 0 20px;
 }
 
@@ -115,8 +115,12 @@ header {
 .jumbotron#mobile-page {
 	background-image: url("../img/mobile-bg.jpg"); 
 }
-
 .body-copy {
 	font-size: 18px;
 	line-height: 26px;
+}
+#responsive p{
+	margin: 20px 0;
+	font-size: 1.2em;
+	line-height: 25px;
 }
