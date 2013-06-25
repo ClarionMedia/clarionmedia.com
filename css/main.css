@@ -127,11 +127,11 @@ header {
 #cloud-page {
 	position: relative;
 	min-height: 638px;
-	background-color: #a9b5b3;
+	background-color: #484b4b;
 	background-image: url("../img/cloud-bg.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
-	color: #000000;
+	color: #141414;
 }
 
 
