@@ -118,7 +118,7 @@ header {
 	line-height: 26px;
 }
 
-#responsive p{
+#responsive-page p{
 	margin: 20px 0;
 	font-size: 1.2em;
 	line-height: 25px;
@@ -134,4 +134,7 @@ header {
 	color: #141414;
 }
 
-
+#contact-page {
+	margin-top: 40px;
+	background: #CCC;
+}
