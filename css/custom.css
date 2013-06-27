@@ -1,10 +1,14 @@
+body {
+	font-family: 'Lato' sans-serif;
+}
+
 .navbar .nav {
 	float: right;
 }
 
-/*.navbar .brand {
+.navbar .brand {
 	margin-top: 15px;
-}*/
+}
 
 .navbar .nav > li > a {
 	margin-top: 70px;
@@ -15,24 +19,55 @@
 }
 
 section#main {
-	margin-top: 80px;
+	margin-top: 110px;
+}
+
+#banner {
+	background-image: url("../img/macbook.png");
+}
+
+.transparent-box {
+	background-color:rgba(0,0,0,0.25);
+	padding:10px;
+	margin-top:70px;
 }
 
 .jumbotron {
 	padding: 20px;
 	text-align: left;
-	background-image: url("../img/macbook.png");
 	background-size: cover;
 	background-repeat: no-repeat;
-	color: white;
+	color: #f8f8f8;
+}
+
+.page {	
+	padding: 20px;
 	margin-bottom: 20px;
+	min-height: 638px;
 }
 
 div#main {
 	padding: 0 20px;
 }
 
+section#mobile {
+	background-color: #41200d;
+	background-image: url("../img/mobile-bg.jpg");
+}
+
+section#cloud {
+	background-color: #484b4b;
+	background-image: url("../img/cloud-bg.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	color: #f8f8f8;
+}
+
 @media (max-width: 979px) {
+	.navbar-fixed-top {
+		margin-bottom: 0;
+	}
+
 	section#main {
 		margin-top: 0;
 	}
