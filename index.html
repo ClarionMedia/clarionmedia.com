@@ -11,10 +11,10 @@
     <!-- Le styles -->
     <link href="css/bootstrap.css" rel="stylesheet">
     <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
-    <link href="css/main.css" rel="stylesheet">
     <link href="css/bootstrap-responsive.css" rel="stylesheet">
     <link href="http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
 
+    <link href="css/custom.css" rel="stylesheet">
     <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
       <script src="js/html5shiv.js"></script>
@@ -36,14 +36,15 @@
         
         <!-- logo -->
         <a class="brand" href="#home"> 
-            <img id="logo" src="img/logo.png" alt="Clarion Media" title="Clarion Media" />
+            <img id="logo" src="img/logo.png" alt="Clarion Media" title="Clarion Media" class="hidden-phone" />
+            <img id="logo" src="img/logo-small-text.png" alt="Clarion Media" title="Clarion Media" class="visible-phone" />
         </a> 
         
         <!-- Navigation -->
         <div class="nav-collapse collapse" id="navigation">
           <ul class="nav">
           
-            <li class="active" style="width:0.1%"><a href="#home"><span class="icon-chevron-up" style="margin-top:4px"></span></a></li>
+            <li class="active"><a href="#home"><span class="icon-chevron-up" style="margin-top:4px"></span></a></li>
             <li><a href="#mobile">mobile</a></li>
             <li><a href="#services">web</a></li>
             <li><a href="#news">cloud</a></li>
@@ -55,99 +56,108 @@
   </header>
   <!-- End Header / Nav --> 
 
-  <!-- Jumbotron -->
-  <div class="jumbotron">
-    <div class="container">
-      <div class="span7">
-        <h1>We build<br />software that sings.</h1>
-        <p class="lead">Web, mobile, enterprise&mdash;let's build something <i>extraordinary</i>.</p>
-        <a class="btn btn-large btn-danger" href="#">Get started today</a>
-      </div>
-    </div>
-  </div>
-
-  <div id="main" class="container">
-    <div class="row">
-      <div class="span6">
-        <h2>Like Music to Your Ears</h2>
-        <p>Finally, gain clarity from software. Clarion Media provides development and consulting
-          services in the web, mobile, and enterprise space. We build <strong>extraordinary solutions</strong>
-          while tackling <strong>challenging problems</strong>. Do more with your business.</p>
-      
-      <div class="row service-list">        
-        <div class="span2 text-center">
-          <i class="icon-android icon-3x"></i>
-          <i class="icon-plus"></i>
-          <i class="icon-apple icon-3x"></i>
-          <h3>Mobile</h3>
-        </div>
-        <div class="span2 text-center">
-          <i class="icon-desktop icon-3x"></i>
-          <i class="icon-plus"></i>
-          <i class="icon-tablet icon-3x"></i>
-          <i class="icon-plus"></i>
-          <i class="icon-mobile-phone icon-3x"></i>
-          <h3>Responsive</h3>
-        </div>
-        <div class="span2 text-center">
-          <i class="icon-cloud icon-3x"></i>
-          <h3>Cloud</h3>
-        </div>
+  <section id="main" class="home">
+    <div class="jumbotron" id="banner">
+      <div class="container page" id="banner-info">
+        <div class="span7">
+          <h1>We build<br />software that sings.</h1>
+          <p class="lead">Web, mobile, enterprise&mdash;let's build something <i>extraordinary</i>.</p>
+          <a class="btn btn-large btn-danger" href="#">Get started today</a>
         </div>
       </div>
-      
-      <div class="span6">  
-     
-        <h4><i class="icon-group icon-4x pull-left icon-border"></i> Seasoned Experience</h4>
-        <p class="op8">Quisque iaculis massa felis, et condimentum magna pharetra ac. Phasellus lacus nibh, tempor pulvinar arcu ac, ultricies faucibus turpis. Nunc vestibulum vulputate laoreet. Suspendisse id tempus felis. Mauris vel suscipit dui.</p>
-     
-        <br>
-        
-        <h4><i class="icon-cogs icon-4x pull-left icon-border"></i> Quality Solutions</h4>
-        <p class="op8" >Vestibulum tincidunt ligula congue tortor adipiscing, vel sodales metus blandit. Aliquam quis fringilla mauris. Quisque vitae ligula nec mi lobortis tempor sit amet at purus. Integer ac consequat lectus.</p>
-
-        <br>
-
-      </div>   
     </div>
-  </div>
 
-<div class="jumbotron" id="mobile-page">
-  <div class="span8">
-    <img src="img/tablet-app.png" />
-  </div>
-  <div class="span6" style="margin-top:80px">
-    <h1>Mobilize Your Business</h1>
-    <p class="lead">There are over 125 million smartphones and 50 million tablets in the United States.</p>
-    <p class="body-copy">Desktop computing is old hat. Your customers and employees are mobile, but is your business? Clarion Media offers solutions to bring your company online and on-the-go, specializing in the construction of rich Android and iOS applications.</p>
-  </div>
-</div>
+    <div id="main" class="container page">
+      <div class="row">
+        <div class="span6">
+          <h2>Like Music to Your Ears</h2>
+          <p>Finally, gain clarity from software. Clarion Media provides development and consulting
+            services in the web, mobile, and enterprise space. We build <strong>extraordinary solutions</strong>
+            while tackling <strong>challenging problems</strong>. Do more with your business.</p>
+        <br>
+        <div class="row service-list">        
+          <div class="span2 text-center">
+            <i class="icon-android icon-3x"></i>
+            <i class="icon-plus"></i>
+            <i class="icon-apple icon-3x"></i>
+            <h3>Mobile</h3>
+          </div>
+          <div class="span2 text-center">
+            <i class="icon-desktop icon-3x"></i>
+            <i class="icon-plus"></i>
+            <i class="icon-tablet icon-3x"></i>
+            <i class="icon-plus"></i>
+            <i class="icon-mobile-phone icon-3x"></i>
+            <h3>Responsive</h3>
+          </div>
+          <div class="span2 text-center">
+            <i class="icon-cloud icon-3x"></i>
+            <h3>Cloud</h3>
+          </div>
+          </div>
+        </div>
+      
+        <div class="span6">  
+       
+          <h4><i class="icon-group icon-4x pull-left icon-border"></i> Seasoned Experience</h4>
+          <p class="op8">Quisque iaculis massa felis, et condimentum magna pharetra ac. Phasellus lacus nibh, tempor pulvinar arcu ac, ultricies faucibus turpis. Nunc vestibulum vulputate laoreet. Suspendisse id tempus felis. Mauris vel suscipit dui.</p>
+       
+          <br>
+          
+          <h4><i class="icon-cogs icon-4x pull-left icon-border"></i> Quality Solutions</h4>
+          <p class="op8" >Vestibulum tincidunt ligula congue tortor adipiscing, vel sodales metus blandit. Aliquam quis fringilla mauris. Quisque vitae ligula nec mi lobortis tempor sit amet at purus. Integer ac consequat lectus.</p>
 
-<div class="container" id="responsive">
+          <br>
+        </div>   
+      </div>
+    </div>
+  </section>
+  <section id="mobile">
+    <div class="jumbotron" id="mobile">
+      <div class="container page">
+        <div class="row">
+        <div class="span6">
+          <img src="img/tablet-app.png" />
+        </div>
+        <div class="span6">
+          <h1>Mobilize Your Business</h1>
+          <p class="lead">There are over 125 million smartphones and 50 million tablets in the United States.</p>
+          <p class="body-copy">Desktop computing is old hat. Your customers and employees are mobile, but is your business? Clarion Media offers solutions to bring your company online and on-the-go, specializing in the construction of rich Android and iOS applications.</p>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+<section id="responsive">
+<div class="container page" id="responsive-page">
     <div class="row-fluid">
-      <div class="span6">
-        <h1>Responsive Web</h1><p>Responsive design is a relatively new concept to the web.  While a lot of customers probably haven't heard of the term, you can bet they have likely tried opening your website on their mobile deivce.  Would you rather them see the version on the left (which is more common still), or would you rather them see a style like that on the right?</p>
+      <div class="span4">
+        <h1>Responsive Web</h1>
+        <p>Responsive design is a relatively new concept to the web.  While a lot of customers probably haven't heard of the term, you can bet they have likely tried opening your website on their mobile deivce.  Would you rather them see the version on the left (which is more common still), or would you rather them see a style like that on the right?</p>
+        <br>
         <h1>Acheive Clarity</h1>
         <p>Responsive style allows your customers to view your content eloquently on any screensize.  Your mobile users don't want to have to zoom in and zoom out.  They want to navigate your site in a clean user interface that looks good and makes sense.  Don't leave them out in the cold.  Go Responsive today.</P>
       </div>
-      <div id="unresponsive" class="span3 text-center"><h2>Transform this...</h2><img src="img/iphone-unresponsive.png" /></div>
-      <div id="unresponsive" class="span3 text-center"><h2>Into this...</h2><img src="img/iphone-responsive.png" /></div>
+      <div id="unresponsive" class="span4 text-center"><h2>Transform this...</h2><img src="img/iphone-unresponsive.png" /></div>
+      <div id="unresponsive" class="span4 text-center"><h2>Into this...</h2><img src="img/iphone-responsive.png" /></div>
     </div>
 </div> 
-
-<div class="jumbotron" id="cloud-page">
-  <div class="container">
-    <div class="span4" style="margin-top:80px">
-      <h1>It's Not Just a Buzzword</h1>
-      <p class="lead">Cut costs, move to the cloud.</p>
-      <p class="body-copy">Moving your infrastructure to the cloud lets your business service more customers,
-        removes the need for capital expenditures, and takes disaster recovery out of the equation. Scale
-        your operations to user demand on-the-fly and without missing a beat.</p>
+</section>
+<section id="cloud">
+<div class="jumbotron">
+  <div class="container page">
+    <div class="row">
+      <div class="span4">
+        <h1>It's Not Just a Buzzword</h1>
+        <p class="lead">Cut costs, move to the cloud.</p>
+        <p class="body-copy">Moving your infrastructure to the cloud lets your business service more customers,
+          removes the need for capital expenditures, and takes disaster recovery out of the equation. Scale
+          your operations to user demand on-the-fly and without missing a beat.</p>
+      </div>
+      <div class="span7 offset1 pull-right">
+        <img src="img/cloud.png" alt="Cloud" />
+      </div>
     </div>
-    <div class="span7 pull-right" style="margin-top:110px">
-      <img src="img/cloud.png" alt="Cloud" />
-    </div>
-    <div class="clearfix"></div>
     <div class="row" style="margin-top:50px">
         <div class="span4">
           <h3><strong><i class="icon-bar-chart"></i> Make Sense of Your Data</strong></h3>
@@ -169,23 +179,61 @@
   </div>
 
 </div>
-
+</section>
+<section id="contact">
+<div class="container page">
+    <div class="row">
+      <div class="span6">
+        <h1>Contact Us</h1>
+        <form>
+          <span class="span6">
+            <label for="name">Name:</label>
+            <input class="span6" type="text" id="name" placeholder="Name">
+          </span>
+          <span class="span6">
+            <label for="email">Email:</label>
+            <input class="span6" type="email" id="email" placeholder="user@example.com">
+          </span>
+          <span class="span6">
+            <label for="phone">Phone:</label>
+            <input class="span6" type="phone" id="phone" placeholder="555-867-5309">
+          </span>
+          <span class="span6">
+            <label for="service">Request more info about:</label>
+            <select class="span6" id="service">
+              <option value="mobile">Mobile</option>
+              <option value="responsive">Responsive Web</option>
+              <option value="cloud">Cloud Solutions</option>
+            </select>
+          </span>
+          <span class="span6">
+            <label for="message">Message:</label>
+            <textarea class="span6" name="message" rows="4" placeholder="Tell us anything else you think we need to know about your project..."></textarea>
+          </span>
+          <span class="span6">
+            <button type="submit" class="btn btn-large btn-block">Submit</button>
+          </span>
+        </form>
+      </div>
+      <div class="span5 offset1">
+          <blockquote>
+            <p>Those guys at Clarion were super friendly and easy to work with.  Plus they have huge penises!</p>
+            <small>Pepe Sylvia<cite title="Source Title"> - Satisfied Client</cite></small>
+          </blockquote>
+          <h2>Let us do your next project.</h2>
+          <p>We're confident that you'll love working with us.  You can even email the owners directly at:</p>
+          <p>ttreat@clarionmedia.com</p>
+          <p>cstrawn@clarionmedia.com</p>
+      </div>  
+    </div>
+</div> 
+</section>
+<footer>
+</footer>
     <!-- Le javascript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="js/jquery-2.0.2.min"></script>
-    <script src="js/bootstrap-transition.js"></script>
-    <script src="js/bootstrap-alert.js"></script>
-    <script src="js/bootstrap-modal.js"></script>
-    <script src="js/bootstrap-dropdown.js"></script>
-    <script src="js/bootstrap-scrollspy.js"></script>
-    <script src="js/bootstrap-tab.js"></script>
-    <script src="js/bootstrap-tooltip.js"></script>
-    <script src="js/bootstrap-popover.js"></script>
-    <script src="js/bootstrap-button.js"></script>
-    <script src="js/bootstrap-collapse.js"></script>
-    <script src="js/bootstrap-carousel.js"></script>
-    <script src="js/bootstrap-typeahead.js"></script>
-
+    <script src="js/jquery-2.0.2.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
   </body>
 </html>
