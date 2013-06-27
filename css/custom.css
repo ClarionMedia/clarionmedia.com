@@ -14,7 +14,35 @@
 	margin-top: 10px;
 }
 
+section#main {
+	margin-top: 80px;
+}
+
+.jumbotron {
+	padding: 20px;
+	text-align: left;
+	background-image: url("../img/macbook.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+	color: white;
+	margin-bottom: 20px;
+}
+
+div#main {
+	padding: 0 20px;
+}
+
+@media (max-width: 979px) {
+	section#main {
+		margin-top: 0;
+	}
+}
+
 @media (max-width: 767px) {
+	.navbar-fixed-top {
+		margin-bottom: 0;
+	}
+
 	.navbar-fixed-top .navbar-inner {
 		padding: 5px 20px;
 		box-shadow: none;
