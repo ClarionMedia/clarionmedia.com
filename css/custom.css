@@ -1,0 +1,126 @@
+body {
+	font-family: 'Lato' sans-serif;
+}
+
+.navbar .nav {
+	float: right;
+}
+
+.navbar .brand {
+	margin-top: 25px;
+}
+
+
+.navbar .btn-navbar {
+	margin-top: 25px;
+}
+
+.navbar .nav > li > a {
+	margin-top: 70px;
+	font-weight: bold;
+	text-align: center;
+	border-left: 1px solid rgba(255,255,255,.75);
+	border-right: 1px solid rgba(0,0,0,.1);
+	width: 80px;
+	font-size: 1.2em;
+}
+
+.navbar .nav li:first-child a {
+	border-left: 0;
+	border-radius: 3px 0 0 3px;
+}
+.navbar .nav li:last-child a {
+	border-right: 0;
+	border-radius: 0 3px 3px 0;
+}
+
+section {
+	clear: both;
+}
+
+section#main {
+	margin-top: 110px;
+}
+
+#banner {
+	background-image: url("../img/macbook.png");
+}
+
+.jumbotron {
+	text-align: left;
+	background-size: cover;
+	background-repeat: no-repeat;
+	color: #f8f8f8;
+}
+
+.page {	
+	padding: 50px 20px;
+}
+
+div#mobile {
+	background-color: #41200d;
+	background-image: url("../img/mobile-bg.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.body-copy {
+	font-size: 18px;
+	line-height: 26px;
+}
+
+section#responsive {
+	font-size: 1.2em;
+	line-height: 25px;
+}
+
+section#cloud {
+	background-color: #484b4b;
+	background-image: url("../img/cloud-bg.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	color: #f8f8f8;
+}
+
+section#contact form .span6 {
+	margin-left: 0;
+}
+
+@media (min-width: 979px) {
+	#banner {
+		min-height: 220px;
+	}
+}
+
+@media (max-width: 979px) {
+	.navbar-fixed-top {
+		margin-bottom: 0;
+	}
+
+	section#main {
+		margin-top: 0;
+	}
+	.navbar .btn-navbar {
+		margin-top: 45px;
+	}
+}
+
+@media (max-width: 767px) {
+	.navbar-fixed-top {
+		margin-bottom: 0;
+	}
+
+	.navbar .brand {
+		margin-top: 15px;
+	}
+
+	.navbar-fixed-top .navbar-inner {
+		padding: 5px 30px;
+		box-shadow: none;
+	}
+
+	.navbar .btn-navbar {
+		margin-top: 25px;
+	}
+
+}
