@@ -1,0 +1,22 @@
+.navbar .nav {
+	float: right;
+}
+
+/*.navbar .brand {
+	margin-top: 15px;
+}*/
+
+.navbar .nav > li > a {
+	margin-top: 70px;
+}
+
+.navbar .btn-navbar {
+	margin-top: 10px;
+}
+
+@media (max-width: 767px) {
+	.navbar-fixed-top .navbar-inner {
+		padding: 5px 20px;
+		box-shadow: none;
+	}
+}
