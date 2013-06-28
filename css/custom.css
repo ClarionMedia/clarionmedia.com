@@ -26,6 +26,10 @@ body {
 	font-size: 1.2em;
 }
 
+.navbar .nav > li.active > a {
+	border-left: none;
+}
+
 .navbar .nav li:first-child a {
 	border-left: 0;
 	border-radius: 3px 0 0 3px;
