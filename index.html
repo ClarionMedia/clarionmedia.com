@@ -195,7 +195,7 @@
     <div class="row">
       <div class="span6">
         <h1>Contact Us</h1>
-        <form action="sendmail.php" method="get">
+        <form id="contact-form" action="sendmail.php" method="get">
           <span class="span6">
             <label for="name">Name:</label>
             <input class="span6" type="text" id="name" name="name" placeholder="Name">
@@ -238,13 +238,26 @@
 </section>
 <footer>
 </footer>
-    <!-- Le javascript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
+
     <script src="js/jquery-2.0.2.min.js"></script>
     <script src="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
     <script>
         $(document).ready(function() {
+            $("#contact-form").validate({
+                rules: {
+                  name: "required",
+                  email: {
+                    required: true,
+                    email: true
+                  }
+                },
+                messages: {
+                  name: "Please enter your name",
+                  email: "Please enter a valid email address"
+                }
+            });
+
             $('.responsive-popover').popover({
                 title: 'What is "Responsive"?',
                 content: "A responsive style allows your customers to view your content eloquently on any screensize. Your mobile users don't want to zoom in and out, they want to navigate your site with ease.",
@@ -252,5 +265,6 @@
             });
         });
     </script>
+
   </body>
 </html>
