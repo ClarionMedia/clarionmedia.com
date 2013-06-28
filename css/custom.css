@@ -8,7 +8,7 @@ body {
 }
 
 .navbar .brand {
-	margin-top: 25px;
+	margin-top: 20px;
 }
 
 
@@ -39,7 +39,7 @@ section {
 	clear: both;
 }
 
-section#main {
+section#home {
 	margin-top: 110px;
 }
 
@@ -102,7 +102,7 @@ section#contact form .span6 {
 		margin-bottom: 0;
 	}
 
-	section#main {
+	section#home {
 		margin-top: 0;
 	}
 	.navbar .btn-navbar {
