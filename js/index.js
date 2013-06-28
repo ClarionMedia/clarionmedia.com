@@ -15,18 +15,6 @@
     }
 })(jQuery);
 
-function menuSelect(selected, selectedMenu) {
-    menuHighlight(selectedMenu);
-    selected.goTo();
-}
-
-function menuHighlight(selectedMenu) {
-    $('#menu').find('a').each(function(i) { 
-        $(this).removeAttr('class');
-    });
-    selectedMenu.attr('class', 'selected');
-}
-
 function setWaypoints(option) {
     $('#home').waypoint(option);
     $('#mobile').waypoint(option);
@@ -68,7 +56,7 @@ $(document).ready(function() {
     });
     $('#mobile').waypoint(function(direction) {
         menuHighlight($('#mobile-link'));
-    }, {offset: -110});
+    });
     $('#responsive').waypoint(function(direction) {
         menuHighlight($('#responsive-link'));
     });
