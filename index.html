@@ -131,15 +131,18 @@
 <section id="responsive">
 <div class="container page" id="responsive-page">
     <div class="row-fluid">
-      <div class="span4">
-        <h1>Responsive Web</h1>
-        <p>Responsive design is a relatively new concept to the web.  While a lot of customers probably haven't heard of the term, you can bet they have likely tried opening your website on their mobile deivce.  Would you rather them see the version on the left (which is more common still), or would you rather them see a style like that on the right?</p>
+      <div class="span5">
+        <h1>Reach Your Audience on Every Medium</h1>
+        <p>We build beautiful websites, but consumers aren’t just connecting from a computer these days.
+          Reach your audience on every device, whether it’s iPhone, iPad, Android, or desktop.  Clarion
+          Media can design <a><span class="responsive-popover">responsive</span></a> websites from the ground
+          up or convert existing sites to a responsive style.</p>
         <br>
-        <h1>Acheive Clarity</h1>
-        <p>Responsive style allows your customers to view your content eloquently on any screensize.  Your mobile users don't want to have to zoom in and zoom out.  They want to navigate your site in a clean user interface that looks good and makes sense.  Don't leave them out in the cold.  Go Responsive today.</P>
+        <h1>Lorem Ipsum</h1>
+        <p>Phasellus pulvinar enim id quam aliquam congue. In hac habitasse platea dictumst. Sed tincidunt eu velit quis fringilla. Etiam sodales massa non quam mattis, et condimentum urna ultricies. </P>
       </div>
-      <div id="unresponsive" class="span4 text-center"><h2>Transform this...</h2><img src="img/iphone-unresponsive.png" /></div>
-      <div id="unresponsive" class="span4 text-center"><h2>Into this...</h2><img src="img/iphone-responsive.png" /></div>
+
+      <div class="span7 text-center"><img src="img/responsive.png" /></div>
     </div>
 </div> 
 </section>
@@ -235,5 +238,14 @@
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="js/jquery-2.0.2.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('.responsive-popover').popover({
+                title: 'What is "Responsive"?',
+                content: "A responsive style allows your customers to view your content eloquently on any screensize. Your mobile users don't want to zoom in and out, they want to navigate your site with ease.",
+                trigger: 'hover'
+            });
+        });
+    </script>
   </body>
 </html>
