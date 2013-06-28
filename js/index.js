@@ -1,3 +1,40 @@
+(function($) {
+    $.fn.goTo = function() {
+        // Temporarily disable waypoints
+        setWaypoints('disable');
+        $('html, body').animate({
+            scrollTop: $(this).offset().top + 'px'
+        }, {
+            duration: 'slow',
+            complete: function() {
+                // Re-enable waypoints
+                setWaypoints('enable');
+            }
+        });
+        return this;
+    }
+})(jQuery);
+
+function menuSelect(selected, selectedMenu) {
+    menuHighlight(selectedMenu);
+    selected.goTo();
+}
+
+function menuHighlight(selectedMenu) {
+    $('#menu').find('a').each(function(i) { 
+        $(this).removeAttr('class');
+    });
+    selectedMenu.attr('class', 'selected');
+}
+
+function setWaypoints(option) {
+    $('#home').waypoint(option);
+    $('#mobile').waypoint(option);
+    $('#responsive').waypoint(option);
+    $('#cloud').waypoint(option);
+}
+
+
 $(document).ready(function() {
 
     $("#contact-form").validate({
@@ -26,4 +63,16 @@ $(document).ready(function() {
 	    scrollBy(0, -110);
 	});
 
+	$('#home').waypoint(function(direction) {
+        menuHighlight($('#home-link'));
+    });
+    $('#mobile').waypoint(function(direction) {
+        menuHighlight($('#mobile-link'));
+    }, {offset: -110});
+    $('#responsive').waypoint(function(direction) {
+        menuHighlight($('#responsive-link'));
+    });
+    $('#academic').waypoint(function(direction) {
+        menuHighlight($('#academic-link'));
+    });
 });
