@@ -41,7 +41,7 @@ $(document).ready(function() {
 
     $('.responsive-popover').popover({
         title: 'What is "Responsive"?',
-        content: "A responsive style allows your customers to view your content eloquently on any screensize. Your mobile users don't want to zoom in and out, they want to navigate your site with ease.",
+        content: "A responsive style allows your customers to view your content eloquently on any screen size. Your mobile users don't want to zoom in and out, they want to navigate your site with ease.",
         trigger: 'hover'
     });
 
