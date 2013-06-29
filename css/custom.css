@@ -99,6 +99,10 @@ section#contact form .span6 {
 	#banner {
 		min-height: 220px;
 	}
+
+	#mobile-text{
+		margin-top: 40px;
+	}
 }
 
 @media (max-width: 979px) {
@@ -111,6 +115,10 @@ section#contact form .span6 {
 	}
 	.navbar .btn-navbar {
 		margin-top: 45px;
+	}
+
+	#contact-text{
+		margin-top: 70px;
 	}
 }
 
