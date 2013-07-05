@@ -20,7 +20,7 @@ $(document).ready(function() {
         trigger: 'hover'
     });
 
-    $('.navbar li a').click(function(e){
+    $('a').click(function(e){
         e.preventDefault();
         var headerOffset = $(window).width() > 979 ? 110 : 0;
         $('html, body').animate({
