@@ -1,28 +1,3 @@
-(function($) {
-    $.fn.goTo = function() {
-        // Temporarily disable waypoints
-        setWaypoints('disable');
-        $('html, body').animate({
-            scrollTop: $(this).offset().top + 'px'
-        }, {
-            duration: 'slow',
-            complete: function() {
-                // Re-enable waypoints
-                setWaypoints('enable');
-            }
-        });
-        return this;
-    }
-})(jQuery);
-
-function setWaypoints(option) {
-    $('#home').waypoint(option);
-    $('#mobile').waypoint(option);
-    $('#responsive').waypoint(option);
-    $('#cloud').waypoint(option);
-}
-
-
 $(document).ready(function() {
 
     $("#contact-form").validate({
@@ -45,22 +20,13 @@ $(document).ready(function() {
         trigger: 'hover'
     });
 
-	$('.navbar li a').click(function(e) {
-	    e.preventDefault();
-	    $($(this).attr('href'))[0].scrollIntoView();
-	    scrollBy(0, -110);
-	});
+    $('.navbar li a').click(function(e){
+        e.preventDefault();
+        var headerOffset = $(window).width() > 979 ? 110 : 0;
+        $('html, body').animate({
+            scrollTop: $( $.attr(this, 'href') ).offset().top - headerOffset
+        }, 650);
+        return false;
+    });
 
-	$('#home').waypoint(function(direction) {
-        menuHighlight($('#home-link'));
-    });
-    $('#mobile').waypoint(function(direction) {
-        menuHighlight($('#mobile-link'));
-    });
-    $('#responsive').waypoint(function(direction) {
-        menuHighlight($('#responsive-link'));
-    });
-    $('#academic').waypoint(function(direction) {
-        menuHighlight($('#academic-link'));
-    });
 });
