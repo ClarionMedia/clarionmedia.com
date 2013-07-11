@@ -66,7 +66,7 @@ section#home {
 	padding: 50px 20px;
 }
 
-div#mobile {
+section#mobile {
 	background-color: #41200d;
 	background-image: url("../img/mobile-bg.jpg");
 	background-size: cover;
